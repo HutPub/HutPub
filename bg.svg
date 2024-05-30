@@ -42,6 +42,7 @@
                     
                     .cube-container {
                         perspective: 1000px;
+			animation: spinCube 5s infinite linear;
                     }
                     
                     .cube-container .cube {
@@ -92,6 +93,16 @@
 
                         to {
                             transform: rotateY(360deg);
+                        }
+                    }
+
+		      @keyframes spinCube {
+                        from {
+                            transform: rotateZ(0deg);
+                        }
+
+                        to {
+                            transform: rotateZ(360deg);
                         }
                     }
                     
